@@ -238,7 +238,7 @@ PrintAddress(EC_KEY *myecc, unsigned char *b58upkh, unsigned char *b58cpkh, unsi
         char *pkey;
         pky = (BIGNUM *)EC_KEY_get0_private_key(myecc);
         pkey = BN_bn2hex(pky);
-        printf("ECDKEY: %s\n", pkey);
+        printf("ECDKEY: %s\n", //key);
 	printf("%s\n", b58upkh);
 	printf("%s\n", b58cpkh);
 	printf("%s\n", b58cpsh);
